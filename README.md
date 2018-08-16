@@ -10,5 +10,5 @@ Implemented algorithms:
  
 Dijkstra's algorithm visualisation:
 <p align="center">
-  <img width="460" height="300" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/images/Dijkstra.jpg">
+  <img src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/images/Dijkstra.jpg">
 </p>
