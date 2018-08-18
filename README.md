@@ -54,7 +54,7 @@ public:
  - Dijkstra's shortest path algorithm of weighted graph
  - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)
  
- ### Grtting Started
+ ## Grtting Started
  For running and testing the program in linux copy the folder with source code files. Then compile it with g++. For compiling  simplificy i've write a makfile  
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
