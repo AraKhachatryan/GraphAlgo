@@ -5,7 +5,8 @@ This library for educational purposes and and very simple for understanting.
 
 <table style="width:100%">
   <tr>
-    <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">Printing graph as adjacency list:
+    <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
+    <th>Printing graph as adjacency list:
  1  -->  2,  4
  2  -->  1,  4,  5
  3  -->  4,  6, 12, 13
@@ -21,7 +22,7 @@ This library for educational purposes and and very simple for understanting.
 13  -->  3, 12
 14  --> 11, 15
 15  -->  9, 14, 16
-16  -->  8, 10, 15</th>
+16  -->  8, 10, 15</tr>  
   </tr>
 </table>
 
