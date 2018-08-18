@@ -3,7 +3,7 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 <img  width="60%" height="60%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/graph_adjacency_list.png">
 
-The graph class
+The graph class based on adjacency lists
 ```C++
 typedef int vertex;
 typedef std::pair<int, int> edge;
