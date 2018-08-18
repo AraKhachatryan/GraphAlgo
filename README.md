@@ -1,6 +1,6 @@
 # Algorithms library for planar graphs (C++):
 
-Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
+Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP. This library for educational purposes and and very simple for understanting.
 <img  width="60%" height="60%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/graph_adjacency_list.png">
 
 The graph class based on adjacency lists
