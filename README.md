@@ -25,11 +25,7 @@ Printing graph as adjacency list:
 
 
 <table style="width:100%">
-<tr><th></th><th></th></tr>
-<tr>
-<th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
-<th align="left">
-<span>C++
+<tr><th></th><th><<span>C++
 Printing graph as adjacency list: </br>
  1  -->  2,  4 </br>
  2  -->  1,  4,  5 </br>
@@ -47,7 +43,11 @@ Printing graph as adjacency list: </br>
 14  --> 11, 15 </br>
 15  -->  9, 14, 16 </br>
 16  -->  8, 10, 15 </br>
-</span>
+</span>/th></tr>
+<tr>
+<th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
+<th align="left">
+
 </th>  
 </tr>
 </table>
