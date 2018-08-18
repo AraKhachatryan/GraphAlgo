@@ -22,9 +22,10 @@ Printing graph as adjacency list:
 15  -->  9, 14, 16
 16  -->  8, 10, 15
 ```
-
-|uhih|dfhdf|
+| | |
 |----|-----|
+|uhih|dfhdf|
+
 
 ```C++
 Printing graph as adjacency list:
