@@ -3,7 +3,7 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-```C++
+```java
 Printing graph as adjacency list:
  1  -->  2,  4
  2  -->  1,  4,  5
