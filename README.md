@@ -7,10 +7,9 @@ This library for educational purposes and and very simple for understanting.
   <tr>
     <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
     <th>
-Printing graph as adjacency list:
-	    Printing graph as adjacency list:
- 1  -->  2,  4
- 2  -->  1,  4,  5
+Printing graph as adjacency list:  
+ 1  -->  2,  4  
+ 2  -->  1,  4,  5  
  3  -->  4,  6, 12, 13
  4  -->  1,  2,  3,  6,  7
  5  -->  2,  7
@@ -100,8 +99,7 @@ public:
  - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)
  
  ## Grtting Started
- For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. 
- To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name.
+ For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name.
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
