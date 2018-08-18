@@ -3,10 +3,11 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-<table style="width:100%" align="left">
+<table style="width:100%">
   <tr>
-    <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
-    <th>
+    <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
+    </th>
+    <th align="left">
 Printing graph as adjacency list: <br/>
  1  -->  2,  4 <br/>
  2  -->  1,  4,  5 <br/>
