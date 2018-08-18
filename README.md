@@ -3,32 +3,10 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-<table style="width:100%">
+<table style="width:100%" align="left">
   <tr>
     <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
     <th>
-Printing graph as adjacency list: <br/>
- 1  -->  2,  4 <br/>
- 2  -->  1,  4,  5 <br/>
- 3  -->  4,  6, 12, 13
- 4  -->  1,  2,  3,  6,  7
- 5  -->  2,  7
- 6  -->  3,  4, 11, 12
- 7  -->  4,  5, 10, 11
- 8  --> 10, 16
- 9  --> 10, 11, 15
-10  -->  7,  8,  9, 16
-11  -->  6,  7,  9, 14
-12  -->  3,  6, 13
-13  -->  3, 12
-14  --> 11, 15
-15  -->  9, 14, 16
-16  -->  8, 10, 15
-	</tr>  
-  </tr>
-</table>
-
-
 Printing graph as adjacency list: <br/>
  1  -->  2,  4 <br/>
  2  -->  1,  4,  5 <br/>
@@ -46,7 +24,9 @@ Printing graph as adjacency list: <br/>
 14  --> 11, 15 <br/>
 15  -->  9, 14, 16 <br/>
 16  -->  8, 10, 15 <br/>
-
+    </tr>  
+  </tr>
+</table>
 
 
 The graph class based on adjacency lists
