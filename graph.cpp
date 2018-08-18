@@ -1,5 +1,6 @@
 #include "graph.hpp"
 #include <iostream>
+#include <iomanip>
 #include <algorithm>
 
 void graph::
@@ -12,7 +13,7 @@ remove_vertex(vertex v)
 	m_neighborhood.erase(v);	
 
 	vertices::iterator v_it = find(m_vertices.begin(), m_vertices.end(), v);
-	if(v_it != m_vertices.end()) {
+	if (v_it != m_vertices.end()) {
 		m_vertices.erase(v_it);
 	}
 
@@ -22,12 +23,12 @@ void graph::
 remove_edge(vertex s, vertex d)
 {
 	edges::iterator e_it = find(m_edges.begin(), m_edges.end(), edge(s, d));
-	if(e_it != m_edges.end()) {
+	if (e_it != m_edges.end()) {
 		m_edges.erase(e_it);
 	}
 	
 	e_it = find(m_edges.begin(), m_edges.end(), edge(d, s));
-	if(e_it != m_edges.end()) {
+	if (e_it != m_edges.end()) {
 		m_edges.erase(e_it);
 	}
 
@@ -46,9 +47,9 @@ bool graph::
 is_vertex_in_graph(const vertex& v) const
 {
 	vertices::const_iterator it = find(m_vertices.begin(), m_vertices.end(), v);
-	if(it != m_vertices.end()) {
+	if (it != m_vertices.end()) {
 		return true;
-	}else{
+	} else {
 		return false;
 	}
 }
@@ -122,9 +123,9 @@ void graph::
 add_vertices(const vertices& vs)
 {
 	vertices::const_iterator it = vs.begin();
-	for( ; it != vs.end(); ++it) {
+	for ( ; it != vs.end(); ++it) {
 		vertices::const_iterator v_it = find(m_vertices.begin(), m_vertices.end(), *it);
-        	if( v_it != m_vertices.end() ) {
+        	if ( v_it != m_vertices.end() ) {
 			continue;
 		} else {
 			m_vertices.push_back(*it);
@@ -135,7 +136,7 @@ add_vertices(const vertices& vs)
 void graph::
 add_vertex(const vertex& v) 
 {
-	if( !is_vertex_in_graph(v) ) {
+	if ( !is_vertex_in_graph(v) ) {
 		m_vertices.push_back(v);
 		m_neighborhood.insert( neighborhood::value_type(v, std::vector<int>(0, 0)) );
 	}
@@ -145,8 +146,8 @@ void graph::
 add_edges(const edges& ed)
 {
 	edges::const_iterator it = ed.begin();
-	for( ; it != ed.end(); ++it) {
-		if(! is_edge_in_graph(*it)) {
+	for ( ; it != ed.end(); ++it) {
+		if (! is_edge_in_graph(*it)) {
 			m_edges.push_back(*it);
 			add_vertex( it->first );
 			add_vertex( it->second );
@@ -187,7 +188,7 @@ add_edge(const vertex& s, const vertex& d)
 void graph::
 add_edge(const edge& e)
 {
-	if(! is_edge_in_graph(e)) {
+	if (! is_edge_in_graph(e)) {
 		m_edges.push_back(e);
 		add_vertex(e.first);
 		add_vertex(e.second);
@@ -216,7 +217,7 @@ graph(const graph& g)
 	m_neighborhood.clear();
 	m_edges.clear();
 	edges::const_iterator eit = g.m_edges.begin();
-	for( ; eit != g.m_edges.end(); ++eit) {
+	for ( ; eit != g.m_edges.end(); ++eit) {
 		add_edge(*eit);
 	}
 	vertices::const_iterator vit = g.m_vertices.begin();
@@ -243,7 +244,7 @@ operator =(const graph& g)
 	m_neighborhood.clear();
 	m_edges.clear();
 	edges::const_iterator eit = g.m_edges.begin();
-	for( ; eit != g.m_edges.end(); ++eit) {	
+	for ( ; eit != g.m_edges.end(); ++eit) {	
 		add_edge(*eit);
 	}
 	vertices::const_iterator vit = g.m_vertices.begin();
@@ -261,10 +262,13 @@ print_neighborhood() const
 {
 	neighborhood::const_iterator it = m_neighborhood.begin();
 	for ( ; it != m_neighborhood.end(); ++it ) {
-		std::cout << it->first << "  --> " ;
+		std::cout << std::setw(2) << it->first << "  --> " ;
 		vertices::const_iterator v_it = it->second.begin();
 		for ( ; v_it != it->second.end(); ++v_it ) {
-				std::cout <<", " << *v_it; 
+			std::cout << std::setw(2) << *v_it;
+			if ( v_it != (it->second.end() - 1) ) {
+				std::cout << ", " ;
+			}
 		}
 		std::cout << std::endl;
 	}
