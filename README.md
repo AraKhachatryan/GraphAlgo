@@ -27,7 +27,7 @@ Printing graph as adjacency list:
 <table style="width:100%">
 <tr>
 <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
-<th align="left" style="font-size:100%>
+<th align="left">
 <span>C++
 Printing graph as adjacency list: </br>
  1  -->  2,  4 </br>
