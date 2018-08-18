@@ -3,7 +3,7 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-<span>
+```C++
 Printing graph as adjacency list: <br/>
  1  -->  2,  4 <br/>
  2  -->  1,  4,  5 <br/>
@@ -21,7 +21,7 @@ Printing graph as adjacency list: <br/>
 14  --> 11, 15 <br/>
 15  -->  9, 14, 16 <br/>
 16  -->  8, 10, 15 <br/>
-</span>
+```
 
 <table style="width:100%">
 <tr>
