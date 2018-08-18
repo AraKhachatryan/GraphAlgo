@@ -54,7 +54,7 @@ public:
  - **Dijkstra's shortest path algorithm of weighted graph** 
  - **Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)**
  
-### Dijkstra's algorithm visualisation on 250 vertices:
+**Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
   <img src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Dijkstra.jpg">
 </p>
