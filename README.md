@@ -7,9 +7,9 @@ This library for educational purposes and and very simple for understanting.
   <tr>
     <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
     <th>
-Printing graph as adjacency list:  
- 1  -->  2,  4  
- 2  -->  1,  4,  5  
+Printing graph as adjacency list: <br/>
+ 1  -->  2,  4 <br/>
+ 2  -->  1,  4,  5 <br/>
  3  -->  4,  6, 12, 13
  4  -->  1,  2,  3,  6,  7
  5  -->  2,  7
@@ -29,9 +29,9 @@ Printing graph as adjacency list:
 </table>
 
 
-Printing graph as adjacency list:
-1  -->  2,  4
-2  -->  1,  4,  5
+Printing graph as adjacency list: <br/>
+1  -->  2,  4 <br/>
+2  -->  1,  4,  5 <br/>
 3  -->  4,  6, 12, 13
 4  -->  1,  2,  3,  6,  7
  5  -->  2,  7
