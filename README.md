@@ -100,7 +100,8 @@ public:
  - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)
  
  ## Grtting Started
- For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name.
+ For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. 
+ To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name.
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
