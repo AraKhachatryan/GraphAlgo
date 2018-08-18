@@ -23,8 +23,8 @@ Printing graph as adjacency list:
 16  -->  8, 10, 15
 ```
 
-|uhih
-|```C++
+|uhih|dfhdf|
+```C++
 Printing graph as adjacency list:
  1  -->  2,  4
  2  -->  1,  4,  5
@@ -43,7 +43,7 @@ Printing graph as adjacency list:
 15  -->  9, 14, 16
 16  -->  8, 10, 15
 ```
-|
+
 <table style="width:100%">
 <tr>
 <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
