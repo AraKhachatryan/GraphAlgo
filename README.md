@@ -24,6 +24,8 @@ Printing graph as adjacency list:
 ```
 
 |uhih|dfhdf|
+|----|-----|
+|ghhh|hjhh|
 ```C++
 Printing graph as adjacency list:
  1  -->  2,  4
