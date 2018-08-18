@@ -20,5 +20,5 @@ $(PROJECT):$(OBJ) $(OBJECTS)
 	$(CC) -MM $< -MT "$@ $(subst .dep, .o, $@)" -o $@
 .PHONY: clean
 clean:
-	rm -rf *.o *.dep $(PROJECT)
+	rm -rf *.o *.dep *~ $(PROJECT)
 -include $(DEPENDS)
