@@ -12,39 +12,38 @@ int main()
 
 	// Build a graph via adding edges
 	g.add_edge(1, 2);
-	g.add_edge(2, 3);
+	g.add_edge(1, 4);	
+	g.add_edge(2, 4);
+	g.add_edge(2, 5);
 	g.add_edge(3, 4);
-	g.add_edge(3, 7);
+	g.add_edge(3, 6);
+	g.add_edge(3, 12);
+	g.add_edge(3, 13);
+	g.add_edge(4, 6);
 	g.add_edge(4, 7);
-	g.add_edge(4, 8);
-	g.add_edge(5, 6);
-	g.add_edge(5, 9);
-	g.add_edge(5, 10);
-	g.add_edge(6, 9);
+	g.add_edge(5, 7);
+	g.add_edge(6, 11);
+	g.add_edge(6, 12);
 	g.add_edge(7, 10);
 	g.add_edge(7, 11);
-	g.add_edge(7, 12);
-	g.add_edge(8, 12);
+	g.add_edge(8, 10);
+	g.add_edge(8, 16);
 	g.add_edge(9, 10);
-	g.add_edge(9, 13);
-	g.add_edge(9, 14);
-	g.add_edge(10, 11);
-	g.add_edge(10, 13);
-	g.add_edge(11, 12);
-	g.add_edge(11, 15);
-	g.add_edge(12, 16);
-	g.add_edge(13, 14);
-	g.add_edge(15, 16);
+	g.add_edge(9, 11);
+	g.add_edge(9, 15);
+	g.add_edge(10, 16);
+	g.add_edge(11, 14);
+	g.add_edge(12, 13);
+	g.add_edge(14, 15);
+	g.add_edge(15, 16);	
 	
 	std::cout << "Printing graph as adjacency list:" << std::endl;
 	g.print_neighborhood();
 	
-
-	
 /*
 	std::cout << "~~~~~~~~~~~~~~~~~~dfs~~~~~~~~~~~~~~~~~~" << std::endl;
 	graph gr;
-	dfs d(g,4);
+	dfs d(g,1);
 	gr = d();
 	gr.print_neighborhood();
 */
@@ -52,9 +51,8 @@ int main()
 	
 /*
 	std::cout << "~~~~~~~~~~~~~~~connectivity~~~~~~~~~~~~~~~" << std::endl;
-	g.remove_vertex(10);
-	g.remove_edge(2, 3);
-	g.remove_vertex(9);
+	g.remove_vertex(7);
+	g.remove_edge(6, 11);
 	connectivity con(g);
 //	if(!con.is_connected()) {std::cout << "Not connected" << std::endl;}
 	
@@ -70,7 +68,7 @@ int main()
 
 /*
 	std::cout << "~~~~~~~~~~~~~~~biconnectivity~~~~~~~~~~~~~~~" << std::endl;
-	g.remove_vertex(8);	
+	g.remove_edge(6, 11);
 	biconnectivity bi( g );
 	graphs graphs_out;
 	graphs_out = bi();
@@ -86,42 +84,43 @@ int main()
 	
 	dijkstra dijk(g);
 
-	dijk.set_edge_weight(1, 2, 2);
-	dijk.set_edge_weight(2, 3, 5);
+	dijk.set_edge_weight(1, 2, 1);
+	dijk.set_edge_weight(1, 4, 5);	
+	dijk.set_edge_weight(2, 4, 3);
+	dijk.set_edge_weight(2, 5, 2);
 	dijk.set_edge_weight(3, 4, 4);
-	dijk.set_edge_weight(3, 7, 2);
-	dijk.set_edge_weight(4, 7, 4);
-	dijk.set_edge_weight(4, 8, 2);
-	dijk.set_edge_weight(5, 6, 7);
-	dijk.set_edge_weight(5, 9, 1);
-	dijk.set_edge_weight(5, 10, 2);
-	dijk.set_edge_weight(6, 9, 6);
-	dijk.set_edge_weight(7, 10, 8);
-	dijk.set_edge_weight(7, 11, 5);
-	dijk.set_edge_weight(7, 12, 2);
-	dijk.set_edge_weight(8, 12, 4);
+	dijk.set_edge_weight(3, 6, 2);
+	dijk.set_edge_weight(3, 12, 3);
+	dijk.set_edge_weight(3, 13, 1);
+	dijk.set_edge_weight(4, 6, 6);
+	dijk.set_edge_weight(4, 7, 3);
+	dijk.set_edge_weight(5, 7, 1);
+	dijk.set_edge_weight(6, 11, 5);
+	dijk.set_edge_weight(6, 12, 1);
+	dijk.set_edge_weight(7, 10, 2);
+	dijk.set_edge_weight(7, 11, 9);
+	dijk.set_edge_weight(8, 10, 1);
+	dijk.set_edge_weight(8, 16, 1);
 	dijk.set_edge_weight(9, 10, 3);
-	dijk.set_edge_weight(9, 13, 2);
-	dijk.set_edge_weight(9, 14, 5);
-	dijk.set_edge_weight(10, 11, 4);
-	dijk.set_edge_weight(10, 13, 3);
-	dijk.set_edge_weight(11, 12, 1);
-	dijk.set_edge_weight(11, 15, 2);
-	dijk.set_edge_weight(12, 16, 4);
-	dijk.set_edge_weight(13, 14, 4);
-	dijk.set_edge_weight(15, 16, 3);
+	dijk.set_edge_weight(9, 11, 4);
+	dijk.set_edge_weight(9, 15, 2);
+	dijk.set_edge_weight(10, 16, 3);
+	dijk.set_edge_weight(11, 14, 1);
+	dijk.set_edge_weight(12, 13, 2);
+	dijk.set_edge_weight(14, 15, 1);
+	dijk.set_edge_weight(15, 16, 2);
 
 	dijk.shortest_paths_from(1);
-	dijk.get_shortest_path_to(16);
+	dijk.get_shortest_path_to(14);
 	dijk.print_path();
 	std::cout << std::endl;
 	
-	dijk.get_shortest_path_to(15);
+	dijk.get_shortest_path_to(9);
 	dijk.print_path();
 	std::cout << std::endl;
 
-	dijk.shortest_paths_from(14);
-	dijk.get_shortest_path_to(2);
+	dijk.shortest_paths_from(13);
+	dijk.get_shortest_path_to(8);
 	dijk.print_path();
 
 
@@ -135,6 +134,6 @@ int main()
 	g.print_neighborhood();
 */
 
-        std::cout << "~~~~~~~~~~~~~~~~~END~~~~~~~~~~~~~~~~~~~" << std::endl;
-        return 0;
+	std::cout << "~~~~~~~~~~~~~~~~~END~~~~~~~~~~~~~~~~~~~" << std::endl;
+	return 0;
 }
