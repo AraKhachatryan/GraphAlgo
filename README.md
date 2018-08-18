@@ -48,6 +48,7 @@ Printing graph as adjacency list:
 ```
 
 <table style="width:100%">
+<tr></tr>
 <tr>
 <th><img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg"></th>
 <th align="left">
