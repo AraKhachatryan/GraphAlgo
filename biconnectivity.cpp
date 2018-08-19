@@ -61,19 +61,19 @@ bicomponents()
 {
 	time =  0;
 
-        vertices::const_iterator it = m_vertices.begin();
-        for( ; it != m_vertices.end(); ++it) {
+	vertices::const_iterator it = m_vertices.begin();
+	for( ; it != m_vertices.end(); ++it) {
 		m_parent.insert(parent::value_type( *it, 0 ));
 		m_discovery_time.insert(discovery_time::value_type( *it, time ));
 		m_back.insert(back::value_type( *it,  m_vertices.size()  + 1 ));
-        }
+	}
 	
-        vertices::const_iterator it2 = m_vertices.begin();
+	vertices::const_iterator it2 = m_vertices.begin();
 	for( ; it2 != m_vertices.end(); ++it2) {
 		if( m_discovery_time[*it2] == 0) {
 			biDFS(*it2);     // for each connected graph
 		}
-        }
+	}
 
 }
 
@@ -100,6 +100,6 @@ biconnectivity::
 graphs& biconnectivity::
 operator() ()
 {
-        return graphs_out;
+	return graphs_out;
 }
 
