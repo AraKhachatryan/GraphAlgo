@@ -3,7 +3,7 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-<img  align="left" width="60%" height="60%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
+<img  align="left" width="540" height="360" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
 
 ```C++
 Printing graph as adjacency list:
