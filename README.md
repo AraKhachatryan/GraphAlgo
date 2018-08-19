@@ -74,6 +74,7 @@ public:
  - Connectivity algorithm (determine whether a graph is connected and make graph's connected components vector) 
  - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)
  - Dijkstra's shortest path algorithm of weighted graph
+ </br>
  
  ## Grtting Started
  
@@ -180,6 +181,8 @@ Path from 13 to 8 is:
 Hope count: 5
 Path cost: 11
 ```
+ 
+  </br>
  
   ## Graph algorithm visualisation on 250 vertices
 Dijkstra's algorithm visualisation on 250 vertices:
