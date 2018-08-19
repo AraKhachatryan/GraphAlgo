@@ -164,7 +164,7 @@ After execution of Dijkstra's shortest path algorithm outputs the shotest path o
 <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Shortest_Path.jpg">
 
  ```C++
-~~~~~~~~~~~~~~~~Dijkstra~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~Dijkstra~~~~~~~~~~~~~~~
 Path from 1 to 14 is:
  1 2 5 7 10 8 16 15 14
 Hope count: 8
