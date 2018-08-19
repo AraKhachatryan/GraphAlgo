@@ -81,7 +81,7 @@ public:
  
  For building graph in main.cpp file called graph class add_edge() method. You can build a graph with your own data using graph class add_ methods.
  
- The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of the above created graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
+ The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of above created initial graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
  
 <img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
 
@@ -104,6 +104,10 @@ Graphs DFS algorithm output:
 15  --> 16,  9, 14
 16  -->  8, 15
 ```
+
+The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. Initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge 6-11 with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 7 is cutvertice: if it will be removed we'll receive two separate not conected graphs. The biconectivity algorithm output is printed on teminal.
+
+<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
