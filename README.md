@@ -3,7 +3,7 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-<img  align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
+<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
 
 ```C++
 Printing graph as adjacency list:
@@ -76,8 +76,65 @@ public:
  - Dijkstra's shortest path algorithm of weighted graph
  
  ## Grtting Started
+ 
  For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name. </br>
+ 
  For building graph in main.cpp file called graph class add_edge() method. You can build a graph with your own data using graph class add_ methods.
+ 
+ The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of above created initial graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
+ 
+<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
+
+```C++
+Graphs DFS algorithm output:
+ 1  -->  2
+ 2  -->  1,  4
+ 3  -->  4,  6
+ 4  -->  2,  3
+ 5  -->  7
+ 6  -->  3, 11, 12
+ 7  --> 11,  5, 10
+ 8  --> 10, 16
+ 9  --> 15
+10  -->  7,  8
+11  -->  6,  7
+12  -->  6, 13
+13  --> 12
+14  --> 15
+15  --> 16,  9, 14
+16  -->  8, 15
+```
+
+The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. Initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge 6-11 with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 4 and 7 is cutvertices: if if these will be removed we'll receive three separate not conected graphs. The biconectivity algorithm output is printed on teminal.
+
+<img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
+
+```C++
+cut vertex 4
+cut vertex 7
+Graph is not bicoconnected
++++++++++++++++++++++++
+ 3  --> 13, 12,  6,  4
+ 4  -->  6,  3
+ 6  --> 12,  4,  3
+12  --> 13,  3,  6
+13  -->  3, 12
++++++++++++++++++++++++
+ 7  --> 11, 10
+ 8  --> 16, 10
+ 9  --> 11, 10, 15
+10  -->  9, 16,  8,  7
+11  --> 14,  7,  9
+14  --> 15, 11
+15  --> 14,  9, 16
+16  --> 15, 10,  8
++++++++++++++++++++++++
+ 1  -->  4,  2
+ 2  -->  5,  4,  1
+ 4  -->  7,  1,  2
+ 5  -->  2,  7
+ 7  -->  5,  4
+```
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
