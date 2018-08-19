@@ -82,7 +82,9 @@ public:
  For building graph in main.cpp file called graph class add_edge() method. You can build a graph with your own data using graph class add_ methods.
  
  The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of the above created graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
- <img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
+ 
+<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
+
 ```C++
 Graphs DFS algorithm output:
  1  -->  2
