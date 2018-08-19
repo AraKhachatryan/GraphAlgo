@@ -3,7 +3,7 @@
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
 
-<img  align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
+<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph.jpg">
 
 ```C++
 Printing graph as adjacency list:
@@ -76,8 +76,32 @@ public:
  - Dijkstra's shortest path algorithm of weighted graph
  
  ## Grtting Started
+ 
  For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name. </br>
+ 
  For building graph in main.cpp file called graph class add_edge() method. You can build a graph with your own data using graph class add_ methods.
+ 
+ The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of the above created graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
+ <img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
+```C++
+Printing graphs DFS algorithm traversal output as adjacency list:
+ 1  -->  2
+ 2  -->  1,  4
+ 3  -->  4,  6
+ 4  -->  2,  3
+ 5  -->  7
+ 6  -->  3, 11, 12
+ 7  --> 11,  5, 10
+ 8  --> 10, 16
+ 9  --> 15
+10  -->  7,  8
+11  -->  6,  7
+12  -->  6, 13
+13  --> 12
+14  --> 15
+15  --> 16,  9, 14
+16  -->  8, 15
+```
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
