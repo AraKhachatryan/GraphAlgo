@@ -105,9 +105,36 @@ Graphs DFS algorithm output:
 16  -->  8, 15
 ```
 
-The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. Initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge 6-11 with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 7 is cutvertice: if it will be removed we'll receive two separate not conected graphs. The biconectivity algorithm output is printed on teminal.
+The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. Initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge 6-11 with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 4 and 7 is cutvertices: if if these will be removed we'll receive three separate not conected graphs. The biconectivity algorithm output is printed on teminal.
 
 <img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
+
+```C++
+cut vertex 4
+cut vertex 7
+Graph is not bicoconnected
++++++++++++++++++++++++
+ 3  --> 13, 12,  6,  4
+ 4  -->  6,  3
+ 6  --> 12,  4,  3
+12  --> 13,  3,  6
+13  -->  3, 12
++++++++++++++++++++++++
+ 7  --> 11, 10
+ 8  --> 16, 10
+ 9  --> 11, 10, 15
+10  -->  9, 16,  8,  7
+11  --> 14,  7,  9
+14  --> 15, 11
+15  --> 14,  9, 16
+16  --> 15, 10,  8
++++++++++++++++++++++++
+ 1  -->  4,  2
+ 2  -->  5,  4,  1
+ 4  -->  7,  1,  2
+ 5  -->  2,  7
+ 7  -->  5,  4
+```
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
