@@ -107,7 +107,7 @@ Graphs DFS algorithm output:
 
 The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. Initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge 6-11 with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 4 and 7 is cutvertices: if if these will be removed we'll receive three separate not conected graphs. The biconectivity algorithm output is printed on teminal.
 
-<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
+<img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
 
 ```C++
 cut vertex 4
