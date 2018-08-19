@@ -25,6 +25,7 @@ Printing graph as adjacency list:
 16  -->  8, 10, 15
 ```
 
+
 The graph class based on adjacency lists
 ```C++
 typedef int vertex;
