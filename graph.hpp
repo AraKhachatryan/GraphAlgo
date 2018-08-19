@@ -1,3 +1,11 @@
+/******************************************************************************
+*  @file graph.hpp
+*  @brief Algorithms library for planar graphs
+*  @brief Graph abstract data type based on adjacency-lists data structure
+*  @version: 1.0.1
+*  @author: Ara Khachatryan
+******************************************************************************/
+
 #ifndef GRAPH_HPP
 #define GRAPH_HPP
 

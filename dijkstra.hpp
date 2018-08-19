@@ -1,3 +1,24 @@
+/******************************************************************************
+*  @brief
+*  ALGORITHM ShortestPath(G,v):
+*      INPUT: A simple undirected weighted graph G with nonnegative edge 
+*         weights and a distinguished vertex v of G
+*      OUTPUT: A label D[u], for each vertex u of G, such that D[u] is the 
+*         length of a shortest path from v to u in G
+*      INITIALIZE D[v] ← 0 and D[u] ← +∞ for each vertex u ≠ v.
+*      Let a priority queue Q contain all the vertices of G using the 
+*         D labels as keys.
+*      WHILE Q is not empty do
+*          {pull a new vertex u into the cloud}
+*          u ← Q.removeMin()
+*          FOR EACH vertex z adjacent to u such that z is in Q Do
+*              {perform the relaxation procedure on edge (u, z)}
+*              IF D[u] + w((u, z)) < D[z] THEN
+*                  D[z] ← D[u] + w((u, z))
+*                  Change to D[z] the key of vertex z in Q.
+*      RETURN the label D[u] of each vertex u
+******************************************************************************/
+
 #ifndef DIJKSTRA_HPP
 #define DIJKSTRA_HPP
 
