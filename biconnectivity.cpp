@@ -1,5 +1,6 @@
 #include "biconnectivity.hpp"
 #include <iostream>
+#include <algorithm>  // for std::find()
 
 bool biconnectivity::
 is_biconnected()
@@ -43,12 +44,16 @@ biDFS(const vertex& v)
 			m_parent[*it] = v ;
 			biDFS(*it);
 			if( m_back[*it] >= m_discovery_time[v] ) {
-				std::cout<< "cut vertex "<< v << std::endl;
+				if ( m_parent[v] != 0  &&  std::find(m_cutvertices.begin(), m_cutvertices.end(), v) == m_cutvertices.end() ) {
+					std::cout << "cut vertex " << v << std::endl;
+					m_cutvertices.push_back(v);
+				}
 				new_bicomponent(v, *it);
 			} else {
 				m_back[v] = std::min(m_back[v], m_back[*it]) ;
 			}
 		} else if ( (m_discovery_time[*it] < m_discovery_time[v]) && (*it != m_parent[v]) ) {
+			// (v, *it) is back edge
 			m_edge_stack.push( edge(v, *it) );
 			m_back[v] =  std::min(m_back[v], m_discovery_time[*it]);
 		}

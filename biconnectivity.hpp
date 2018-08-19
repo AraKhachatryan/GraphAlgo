@@ -24,6 +24,7 @@ private:
 	graph g_in;
 	graphs graphs_out;
 	vertices m_vertices;
+	vertices m_cutvertices;
 	neighborhood m_neighborhood;
 public:
 	bool is_biconnected();
