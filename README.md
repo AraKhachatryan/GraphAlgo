@@ -141,36 +141,34 @@ Graph is not bicoconnected
  <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Weighted.jpg">
  
  ```C++
-	dijkstra dijk(g);
-
-	dijk.set_edge_weight(1, 2, 1);
-	dijk.set_edge_weight(1, 4, 5);	
-	dijk.set_edge_weight(2, 4, 3);
-	dijk.set_edge_weight(2, 5, 2);
-	dijk.set_edge_weight(3, 4, 4);
-	dijk.set_edge_weight(3, 6, 2);
-	dijk.set_edge_weight(3, 12, 3);
-	dijk.set_edge_weight(3, 13, 1);
-	dijk.set_edge_weight(4, 6, 6);
-	dijk.set_edge_weight(4, 7, 3);
-	dijk.set_edge_weight(5, 7, 1);
-	dijk.set_edge_weight(6, 11, 5);
-	dijk.set_edge_weight(6, 12, 1);
-	dijk.set_edge_weight(7, 10, 2);
-	dijk.set_edge_weight(7, 11, 9);
-	dijk.set_edge_weight(8, 10, 1);
-	dijk.set_edge_weight(8, 16, 1);
-	dijk.set_edge_weight(9, 10, 3);
-	dijk.set_edge_weight(9, 11, 4);
-	dijk.set_edge_weight(9, 15, 2);
-	dijk.set_edge_weight(10, 16, 3);
-	dijk.set_edge_weight(11, 14, 1);
-	dijk.set_edge_weight(12, 13, 2);
-	dijk.set_edge_weight(14, 15, 1);
-	dijk.set_edge_weight(15, 16, 2);
-
-	dijk.shortest_paths_from(1);
-	dijk.get_shortest_path_to(14);
+dijkstra dijk(g);
+dijk.set_edge_weight(1, 2, 1);
+dijk.set_edge_weight(1, 4, 5);	
+dijk.set_edge_weight(2, 4, 3);
+dijk.set_edge_weight(2, 5, 2);
+dijk.set_edge_weight(3, 4, 4);
+dijk.set_edge_weight(3, 6, 2);
+dijk.set_edge_weight(3, 12, 3);
+dijk.set_edge_weight(3, 13, 1);
+dijk.set_edge_weight(4, 6, 6);
+dijk.set_edge_weight(4, 7, 3);
+dijk.set_edge_weight(5, 7, 1);
+dijk.set_edge_weight(6, 11, 5);
+dijk.set_edge_weight(6, 12, 1);
+dijk.set_edge_weight(7, 10, 2);
+dijk.set_edge_weight(7, 11, 9);
+dijk.set_edge_weight(8, 10, 1);
+dijk.set_edge_weight(8, 16, 1);
+dijk.set_edge_weight(9, 10, 3);
+dijk.set_edge_weight(9, 11, 4);
+dijk.set_edge_weight(9, 15, 2);
+dijk.set_edge_weight(10, 16, 3);
+dijk.set_edge_weight(11, 14, 1);
+dijk.set_edge_weight(12, 13, 2);
+dijk.set_edge_weight(14, 15, 1);
+dijk.set_edge_weight(15, 16, 2);
+dijk.shortest_paths_from(1);
+dijk.get_shortest_path_to(14);
 ```
  
   ## Graph algorithm visualisation on 250 vertices
