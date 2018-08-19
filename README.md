@@ -84,7 +84,7 @@ public:
  The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of the above created graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
  <img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
 ```C++
-Printing graphs DFS algorithm traversal output as adjacency list:
+Graphs DFS algorithm output:
  1  -->  2
  2  -->  1,  4
  3  -->  4,  6
