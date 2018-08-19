@@ -164,7 +164,7 @@ dijk.set_edge_weight(15, 16, 2);
 dijk.shortest_paths_from(1);
 dijk.get_shortest_path_to(14);
 ```
-After execution of Dijkstra's shortest path algorithm outputs the shotest path on terminal.
+After execution of Dijkstra's shortest path algorithm the shotest path is printed on terminal.
 
 <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Shortest_Path.jpg">
 
