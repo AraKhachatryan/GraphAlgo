@@ -108,7 +108,7 @@ Graphs DFS algorithm output:
 16  -->  8, 15
 ```
 
-**Biconectivity algorithm:**
+**Biconectivity algorithm:** </br>
 The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. Initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge 6-11 with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 4 and 7 is cutvertices: if if these will be removed we'll receive three separate not conected graphs. The biconectivity algorithm output is printed on teminal.
 
 <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
@@ -140,7 +140,7 @@ Graph is not bicoconnected
  7  -->  5,  4
 ```
  
- **Dijkstra's shortest path algorithm:**
+ **Dijkstra's shortest path algorithm:** </br>
  The Dijkstra's shortest path algorithm is implemented in dijkstra.hpp and dijkstra.cpp files. In main.cpp file created an object of Dijkstra class with input of initial graph. Then on Dijkstra type object called set_edge_weight(const vertex&, const vertex&, double) method, where first two arguments are graph edges identifiers and last third argument is edge weight. Start vertex is 1 and end vertex is 14. Algorithm will findi shortest path in weighted graph from vertices 1 to 14.
  
  <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Weighted.jpg">
