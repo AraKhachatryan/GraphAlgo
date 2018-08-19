@@ -149,16 +149,9 @@ dijk.set_edge_weight(2, 4, 3);
 dijk.set_edge_weight(2, 5, 2);
 dijk.set_edge_weight(3, 4, 4);
 dijk.set_edge_weight(3, 6, 2);
-dijk.set_edge_weight(3, 12, 3);
-dijk.set_edge_weight(3, 13, 1);
-dijk.set_edge_weight(4, 6, 6);
 ...
 ...
 ...
-dijk.set_edge_weight(9, 10, 3);
-dijk.set_edge_weight(9, 11, 4);
-dijk.set_edge_weight(9, 15, 2);
-dijk.set_edge_weight(10, 16, 3);
 dijk.set_edge_weight(11, 14, 1);
 dijk.set_edge_weight(12, 13, 2);
 dijk.set_edge_weight(14, 15, 1);
