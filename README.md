@@ -83,7 +83,7 @@ public:
  
  The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of above created initial graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
  
-<img align="left" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
+<img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
 
 ```C++
 Graphs DFS algorithm output:
@@ -136,7 +136,8 @@ Graph is not bicoconnected
  7  -->  5,  4
 ```
  
-**Dijkstra's algorithm visualisation on 250 vertices:**
+  ## Graph algorithm visualisation on 250 vertices
+Dijkstra's algorithm visualisation on 250 vertices:
 <p align="left">
   <img src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Dijkstra.jpg">
 </p>
