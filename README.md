@@ -71,12 +71,13 @@ public:
 
 **Implemented algorithms:**
  - Depth-first search algorithm (making spanning tree of input graph)
- - Connectivity algorithm (determine whether a graph is connected and make graph's connected components vector)
- - Dijkstra's shortest path algorithm of weighted graph
+ - Connectivity algorithm (determine whether a graph is connected and make graph's connected components vector) 
  - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)
+ - Dijkstra's shortest path algorithm of weighted graph
  
  ## Grtting Started
- For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name.
+ For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name. </br>
+ For building graph in main.cpp file called graph class add_edge() method. You can build a graph with your own data using graph class add_ methods.
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
