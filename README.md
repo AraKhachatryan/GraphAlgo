@@ -186,3 +186,8 @@ Dijkstra's algorithm visualisation on 250 vertices:
 <p align="left">
   <img src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Dijkstra.jpg">
 </p>
+
+DFS algorithm visualisation on 250 vertices:
+<p align="left">
+  <img src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/dfs.jpg">
+</p>
