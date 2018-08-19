@@ -42,24 +42,31 @@ int main()
 	
 /*
 	std::cout << "~~~~~~~~~~~~~~~~~~dfs~~~~~~~~~~~~~~~~~~" << std::endl;
-	graph gr;
-	dfs d(g,1);
-	gr = d();
-	gr.print_neighborhood();
+	graph graph_out_dfs;
+	dfs depth_first(g,1);
+	graph_out_dfs = depth_first();
+	graph_out_dfs.print_neighborhood();
 */
 
 	
 /*
-	std::cout << "~~~~~~~~~~~~~~~connectivity~~~~~~~~~~~~~~~" << std::endl;
+	std::cout << "~~~~~~~~~~~~~~connectivity~~~~~~~~~~~~~~" << std::endl;
 	g.remove_vertex(7);
 	g.remove_edge(6, 11);
 	connectivity con(g);
-//	if(!con.is_connected()) {std::cout << "Not connected" << std::endl;}
+	
+	if( !con.is_connected() )
+	{
+		std::cout << "Graph is not connected" << std::endl;
+	} else {
+		std::cout << "Graph not connected" << std::endl;
+	}
 	
 	graphs graphs_out;
 	graphs_out = con();
+	
 	graphs::const_iterator it = graphs_out.begin();
-	for( ; it != graphs_out.end(); ++it) {
+	for( ; it != graphs_out.end(); ++it) {	
 		std::cout << "+++++++++++++++++++++++" << std::endl;
 		it->print_neighborhood();
 	}
@@ -67,11 +74,19 @@ int main()
 
 
 /*
-	std::cout << "~~~~~~~~~~~~~~~biconnectivity~~~~~~~~~~~~~~~" << std::endl;
+	std::cout << "~~~~~~~~~~~~~~biconnectivity~~~~~~~~~~~~~~" << std::endl;
 	g.remove_edge(6, 11);
-	biconnectivity bi( g );
+	biconnectivity bicon( g );
+	
+	if ( !bicon.is_biconnected() ) {
+		std::cout << "Graph is not bicoconnected" << std::endl;
+	} else {
+		std::cout << "Graph is bicoconnected" << std::endl;
+	}
+	
 	graphs graphs_out;
-	graphs_out = bi();
+	graphs_out = bicon();
+	
 	graphs::const_iterator it = graphs_out.begin();
 	for( ; it != graphs_out.end(); ++it) {
 		std::cout << "+++++++++++++++++++++++" << std::endl;
@@ -80,7 +95,7 @@ int main()
 */
 
 
-	std::cout << "~~~~~~~~~~~~~~~~~Dijkstra~~~~~~~~~~~~~~~~~~~" << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~~Dijkstra~~~~~~~~~~~~~~~~~~" << std::endl;
 	
 	dijkstra dijk(g);
 
