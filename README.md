@@ -77,6 +77,7 @@ public:
  
  ## Grtting Started
  For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name.
+ For building graph in main.cpp file called graph class ```C++void add_edge(const vertex&, const vertex&)``` method
  
 **Dijkstra's algorithm visualisation on 250 vertices:**
 <p align="left">
