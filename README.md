@@ -83,7 +83,7 @@ public:
  
  In main.cpp file shown how to use graph algoritms library. For building graph in main.cpp file created an object of graph class and called on it graph class add_edge() method. You can build a graph with your own data using graph class add_  methods.
  
- **DFS algorithm:**
+ **DFS algorithm:** </br>
  The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of above created initial graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
  
 <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_DFS.jpg">
@@ -140,7 +140,7 @@ Graph is not bicoconnected
  7  -->  5,  4
 ```
  
- **Dijkstra's shortest path algorithm**
+ **Dijkstra's shortest path algorithm:**
  The Dijkstra's shortest path algorithm is implemented in dijkstra.hpp and dijkstra.cpp files. In main.cpp file created an object of Dijkstra class with input of initial graph. Then on Dijkstra type object called set_edge_weight(const vertex&, const vertex&, double) method, where first two arguments are graph edges identifiers and last third argument is edge weight. Start vertex is 1 and end vertex is 14. Algorithm will findi shortest path in weighted graph from vertices 1 to 14.
  
  <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Weighted.jpg">
