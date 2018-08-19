@@ -136,7 +136,7 @@ Graph is not bicoconnected
  7  -->  5,  4
 ```
  
- The Dijkstra's shortest path algorithm is implemented in dijkstra.hpp and dijkstra.cpp files. In main.cpp file created an object of Dijkstra class with input of initial graph. Then on Dijkstra type object called set_edge_weight(const vertex&, const vertex&, double) method, where first two arguments are graph edges identifiers and last third argument is edge weight.
+ The Dijkstra's shortest path algorithm is implemented in dijkstra.hpp and dijkstra.cpp files. In main.cpp file created an object of Dijkstra class with input of initial graph. Then on Dijkstra type object called set_edge_weight(const vertex&, const vertex&, double) method, where first two arguments are graph edges identifiers and last third argument is edge weight. Start vertex is 1 and end vertex is 14. Algorithm will findi shortest path in weighted graph from vertices 1 to 14.
  
  <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Weighted.jpg">
  
@@ -148,7 +148,6 @@ dijk.set_edge_weight(1, 4, 5);
 dijk.set_edge_weight(2, 4, 3);
 dijk.set_edge_weight(2, 5, 2);
 dijk.set_edge_weight(3, 4, 4);
-dijk.set_edge_weight(3, 6, 2);
 ...
 ...
 ...
@@ -159,6 +158,27 @@ dijk.set_edge_weight(15, 16, 2);
 
 dijk.shortest_paths_from(1);
 dijk.get_shortest_path_to(14);
+```
+After execution of Dijkstra's shortest path algorithm outputs the shotest path on terminal.
+
+<img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Shortest_Path.jpg">
+
+ ```C++
+~~~~~~~~~~~~~~~~Dijkstra~~~~~~~~~~~~~~~~~~
+Path from 1 to 14 is:
+ 1 2 5 7 10 8 16 15 14
+Hope count: 8
+Path cost: 11
+
+Path from 1 to 9 is:
+ 1 2 5 7 10 9
+Hope count: 5
+Path cost: 9
+
+Path from 13 to 8 is:
+ 13 3 4 7 10 8
+Hope count: 5
+Path cost: 11
 ```
  
   ## Graph algorithm visualisation on 250 vertices
