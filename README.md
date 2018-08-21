@@ -75,7 +75,7 @@ public:
 **Implemented algorithms:**
  - Depth-first search algorithm (making spanning tree of input graph)
  - Connectivity algorithm (determine whether a graph is connected and make graph's connected components vector) 
- - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's connected components vector)
+ - Biconnectivity algorithm (determine whether a graph is biconnected and and make graph's biconnected components vector)
  - Dijkstra's shortest path algorithm of weighted graph
  
  </br>
