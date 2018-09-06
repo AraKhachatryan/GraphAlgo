@@ -1,24 +1,28 @@
 SH := $(shell 'pwd')
 PROJECT :=$(notdir $(SH))
-SOURCES := $(wildcard $(SH)/*.cpp)
-OBJECTS := $(patsubst %.cpp, %.o, $(SOURCES))
-DEPENDS := $(patsubst %.cpp, %.dep, $(SOURCES))
+OBJECTS = $(patsubst %.cpp, %.o, $(wildcard *.cpp))
+HEADERS = $(wildcard *.hpp)
 
-CFLAGS = -c    
-LFLAGS = -ggdb
-CC = g++ 
-$(PROJECT):$(OBJ) $(OBJECTS)
-	@echo compiling $^
-	$(CC) $(LFLAGS) $(OBJECTS) -o $@
-	rm -rf *.o *.dep
+CC = g++
+CFLAGS = -std=c++11 -g -Wall
 
-%.o : %.cpp 
-	@echo compiling $^
-	$(CC) $(CFLAGS) $< -o $@ 
-%.dep : %.cpp 
-	@echo generating $^
-	$(CC) -MM $< -MT "$@ $(subst .dep, .o, $@)" -o $@
-.PHONY: clean
+.PHONY: default all clean
+
+default: $(PROJECT)
+all: default
+
+%.o: %.cpp $(HEADERS)
+	@echo compiling $< '--->'
+	$(CC) $(CFLAGS) -c $< -o $@
+
+.PRECIOUS: $(PROJECT) $(OBJECTS)
+
+$(PROJECT): $(OBJECTS)
+	@echo linking $< '--->'
+	$(CC) $(OBJECTS) -Wall $(LIBS) -o $@
+	-rm -f *.o
+
 clean:
-	rm -rf *.o *.dep *~ $(PROJECT)
--include $(DEPENDS)
+	-rm -f *.o
+	-rm -f *~
+	-rm -f $(PROJECT)
