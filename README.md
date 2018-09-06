@@ -1,4 +1,22 @@
 # Algorithms library for planar graphs (C++):
+```C++
+           2 . . . . . . . . . 5                   8 . . . . . . . . . 16
+         .   .                   .                   .               . .
+       .       .                   .                   .           .   .
+     .           .                   .                   .       .     .
+   .               .                   .                   .   .       .
+ 1 . . . . . . . . . 4 . . . . . . . . . 7 . . . . . . . . . 10        .
+                   .   .                 .                 .           .
+                 .       .               .               .             .
+               .           .             .             .               .
+             .               .           .           .                 .
+           3 . . . . . . . . . 6         .         9 . . . . . . . . . 15
+         .   .               .   .       .       .                   . 
+       .       .           .       .     .     .                   .   
+     .           .       .           .   .   .                   .     
+   .               .   .               . . .                   .       
+13 . . . . . . . . . 12                 11 . . . . . . . . . 14        
+```
 
 Graph represented as adjacency lists. Used STL containers and iterators. Implemented with OOP.
 This library for educational purposes and and very simple for understanting.
