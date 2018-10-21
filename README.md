@@ -171,7 +171,7 @@ Graph is not bicoconnected
 ```
  
  **Dijkstra's shortest path algorithm:** </br>
- The Dijkstra's shortest path algorithm is implemented in dijkstra.hpp and dijkstra.cpp files. In main.cpp file created an object of Dijkstra class with input of initial graph. Then on Dijkstra type object called set_edge_weight(const vertex&, const vertex&, double) method, where first two arguments are graph edges identifiers and last third argument is edge weight. Start vertex is 1 and end vertex is 14. Algorithm will findi shortest path in weighted graph from vertices 1 to 14.
+ The Dijkstra's shortest path algorithm is implemented in dijkstra.hpp and dijkstra.cpp files. In main.cpp file created an object of Dijkstra class with input of initial graph. Then on Dijkstra type object called set_edge_weight(const vertex&, const vertex&, double) method, where first two arguments are graph edges identifiers and last third argument is edge weight. Start vertex is 1 and end vertex is 14. Algorithm will find shortest path in weighted graph from vertices 1 to 14.
  
  <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Weighted.jpg">
  
@@ -194,7 +194,7 @@ dijk.set_edge_weight(15, 16, 2);
 dijk.shortest_paths_from(1);
 dijk.get_shortest_path_to(14);
 ```
-After execution of Dijkstra's shortest path algorithm the shotest path is printed on terminal.
+After execution of Dijkstra's shortest path algorithm the shortest path is printed on terminal.
 
 <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Shortest_Path.jpg">
 
