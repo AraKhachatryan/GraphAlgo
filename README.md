@@ -80,11 +80,11 @@ public:
  
  </br>
  
- ## Grtting Started
+ ## Getting Started
  
  For running and testing the program in Linux download the graph algorithms library source code files. Open in Linux terminal downloaded folder and compile it. To simplify the compilation, I wrote a makefile. Type in terminal make command and program will be compiled. The executable file will be named as folder name. </br>
  
- In main.cpp file shown how to use graph algoritms library. For building graph in main.cpp file created an object of graph class and called on it graph class add_edge() method. You can build a graph with your own data using graph class add_  methods.
+ In main.cpp file shown how to use graph algorithms library. For building graph in main.cpp file created an object of graph class and called on it graph class add_edge() method. You can build a graph with your own data using graph class add_  methods.
  
  **DFS algorithm:** </br>
  The DFS algorithm is implemented in dfs.hpp and dfs.cpp files. In main.cpp file created an object of DFS class with input of above created initial graph and start vertex 1. Then DFS algorithm traversal output is printed on terminal.
@@ -112,7 +112,7 @@ Graphs DFS algorithm output:
 ```
 
  **Connectivity algorithm:** </br>
- The connectivity algorithm is implemented in connectivity.hpp and connectivity.cpp files. The initial is connected. In order to demonstrate conectivity algorithm in main.cpp file from initial graph removed vertex 7 and edge (6, 11) with g.remove_vertex(7) and g.remove_edge(6, 11) methods respectively. Now we have two separate disjoint subgraphs. The connectivity algorithm tests for connectivity condition and print out in terminal disjoint subgraphs of graph.
+ The connectivity algorithm is implemented in connectivity.hpp and connectivity.cpp files. The initial is connected. In order to demonstrate connectivity algorithm in main.cpp file from initial graph removed vertex 7 and edge (6, 11) with g.remove_vertex(7) and g.remove_edge(6, 11) methods respectively. Now we have two separate disjoint subgraphs. The connectivity algorithm tests for connectivity condition and print out in terminal disjoint subgraphs of graph.
  
  <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Connectivity.jpg">
  
@@ -139,14 +139,14 @@ Graph is not connected
 ```
 
 **Biconectivity algorithm:** </br>
-The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. The initial graph is strongly conected i.e biconected. In order to demonstrate biconectivity algorithm in main.cpp file from initial graph removed the edge (6-11) with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconectivity class with input of above created initial graph. In The graph vertice 4 and 7 is cutvertices: if if these will be removed we'll receive three separate not conected graphs. The biconectivity algorithm output is printed on teminal.
+The biconectivity algorithm is implemented in biconnectivity.hpp and biconnectivity.cpp files. The initial graph is strongly connected i.e biconnected. In order to demonstrate biconnectivity algorithm in main.cpp file from initial graph removed the edge (6-11) with method g.remove_edge(6, 11). Then in main.cpp file created an object of biconnectivity class with input of above created initial graph. In The graph vertex 4 and 7 is cutvertices: if if these will be removed we'll receive three separate not connected graphs. The biconnectivity algorithm output is printed on terminal.
 
 <img align="right" width="540" height="100%" src="https://github.com/AraKhachatryan/Graph-Algorithms/blob/master/img/Graph_Biconectivity.jpg">
 
 ```C++
 cut vertex 4
 cut vertex 7
-Graph is not bicoconnected
+Graph is not biconnected
 +++++++++++++++++++++++
  3  --> 13, 12,  6,  4
  4  -->  6,  3
